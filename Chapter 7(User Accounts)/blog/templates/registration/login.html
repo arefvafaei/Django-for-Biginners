@@ -1,0 +1,8 @@
+{% extemds "base.html" %}
+
+{% block content %}\
+<h2>Login</h2>
+<form method="post" > {% csrf_token %} {{ from.as_f }}
+    <button type="submit" > Login </button>
+</form>
+<% endlock content %>
